@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+            $("#grow").click(function(){
+                
+                $("#box").animate({width: "500px"},1000);
+                
+            });
+            
+            $("#move").click(function(){
+                
+                $("#box").animate({marginLeft: "300px"},1000);
+                
+            });
+            
+            $("#increaseSize").click(function(){
+                
+                $("#box").animate({fontSize: "30px"},1000);
+                
+            });
+            
+            $("#doManyThings").click(function(){
+                
+                $("#box").animate({width: "500px", marginLeft: "300px", fontSize: "30px"}, 1000);
+                
+            });
+        
+        });
+        
+    </script>
+    
+    <style>
+    
+        #box {
+            width:200px;
+            height:200px;
+            background:#cecece;
+            margin-top:10%;
+            position: absolute;
+        }
+        
+        #box p {
+            
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+  
+  <a href="#" id="grow">Grow</a>
+  
+  <a href="#" id="move">Move</a>
+  
+  <a href="#" id="increaseSize">Increase font size</a>
+  
+  <a href="#" id="doManyThings">Do Many Things</a>
+   
+   <div id="box">
+       <p>Hello students</p>
+   </div>
+   
+    
+</body>
+</html>

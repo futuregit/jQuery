@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+//            $("").css("border", "1px solid red");
+//            $("p:last-of-type").css("border", "1px solid blue");
+//            $("div:has(p[class=third])").css("border", "5px solid yellow");
+//            $("p:contains('Thomas')").css("border", "5px solid yellow");
+//            $("p:nth-child(3)").css("border", "5px solid yellow");
+              $("p:parent").css("border", "5px solid yellow");
+        
+        });
+        
+    </script>
+       
+</head>
+<body>
+  
+  <div id="container">
+   
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vitae fugit facilis, omnis, eius reiciendis pariatur tempora! Est similique quam numquam rem quae, repellendus laudantium odio, ipsum quidem eius, incidunt.</p>
+
+       <p>Thomas Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate, ullam aperiam autem, illo consequatur deserunt aliquid sapiente rem itaque, unde dolore voluptatem non! Debitis facere dolorem perspiciatis distinctio quibusdam.</p>
+
+       <p class="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vitae fugit facilis, omnis, eius reiciendis pariatur tempora! Est similique quam numquam rem quae, repellendus laudantium odio, ipsum quidem eius, incidunt.</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate, ullam aperiam autem, illo consequatur deserunt aliquid sapiente rem itaque, unde dolore voluptatem non! Debitis facere dolorem perspiciatis distinctio quibusdam.</p>
+   
+   </div>
+    
+</body>
+</html>

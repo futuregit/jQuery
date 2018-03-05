@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+            $("#slide-up").click(function(){
+                
+                $("#para").slideUp(4000, "linear");
+                
+            });
+            $("#slide-down").click(function(){
+                
+                $("#para").slideDown(4000, "linear");
+                
+            });
+            $("#toggleSlide").click(function(){
+                
+                $("#para").slideToggle("fast", function(){
+                    
+                    alert("Done");
+                    
+                });
+                
+            });
+        
+        });
+        
+    </script>
+    
+</head>
+<body>
+   
+   <a href="#" id="slide-up">
+       Click here to slide up
+   </a><br><br>
+   <a href="#" id="slide-down">
+       Click here to slide down
+   </a><br><br>
+   <a href="#" id="toggleSlide">
+       Click here to toggle slide
+   </a>
+   <p id="para">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quia neque exercitationem eligendi assumenda aut, cum earum praesentium, ut optio nemo obcaecati quis consectetur commodi iste? Aliquid iusto magni officiis.
+   </p>
+   
+    
+</body>
+</html>

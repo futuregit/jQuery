@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+            $("#add-class").click(function(){
+                
+                $("p:first").addClass('color');
+                
+            });
+            
+            $("#remove-class").click(function(){
+                
+                $("p:first").removeClass('color');
+                
+            });
+            
+             $("#toggle-class").click(function(){
+                
+                $("p:first").toggleClass('color');
+                
+            });
+            $("#increase-size").click(function(){
+                
+                $("p:first").css("font-size","+=2px");
+                
+            });
+        
+        
+        });
+        
+    </script>
+    
+    <style>
+    
+        .color {
+            
+            color:red;
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+  
+  <a href="#" id="add-class">Add Class</a>
+  <a href="#" id="remove-class">Remove Class</a>
+  <a href="#" id="toggle-class">Toggle Class</a>
+   <a href="#" id="increase-size">Increase Size</a>
+
+   
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos corporis, qui blanditiis fugit quae rem mollitia inventore aspernatur vel voluptatem voluptates, accusamus culpa veritatis nam doloremque cum. Nisi modi, officiis.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, atque sint eaque possimus, qui reprehenderit consectetur quo pariatur ex ipsam magni amet quos ea aspernatur tenetur, neque deserunt nobis et.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum vel, ipsum! Explicabo, at, inventore. Eligendi, iure aperiam a id voluptatem nihil voluptate, dolores corporis officiis, ab soluta porro quo quaerat.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe laboriosam dignissimos quam maiores vel a rem quasi nostrum vitae culpa dolores, pariatur autem atque aliquam rerum eveniet. Quae, tempora, nobis!</p>
+   
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+//            $("#container p").wrap("<div id='box'>");
+//            $("#container p").wrapAll("<div id='box'>");
+            
+//            $("#container p:first").empty();
+            
+//            $("#container p:first").remove();
+            
+//            $("<div>container</div>").replaceAll("#container");
+            
+            $("#container").replaceWith("<div>THIS HAS BEEN REPLACED</div>");
+        
+        });
+        
+    </script>
+    
+    <style>
+    
+        #box {
+            
+            color:red;
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+   
+   <div id="container">
+   
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nemo unde nostrum, eum quia est ipsum praesentium modi, harum eveniet aspernatur repudiandae similique sint deleniti, commodi labore qui. Nobis, at?</p>   
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam cum sunt, vero dolor placeat nesciunt ipsam, minima illo, autem sapiente a rerum animi veritatis corporis repellendus maxime modi! Illum, nobis.</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vitae, sapiente voluptatem adipisci, asperiores praesentium vero id facilis tenetur ducimus, perferendis nobis harum alias libero ab labore ratione! Aperiam, repellat.</p>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto temporibus magni eaque, necessitatibus dolorum beatae id ipsam illum placeat asperiores adipisci repellendus. Accusantium repellendus culpa voluptatibus quam, quo repudiandae, ut.</p>
+   
+   </div>
+    
+</body>
+</html>

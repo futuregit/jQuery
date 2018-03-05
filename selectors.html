@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+  
+        $("document").ready(function(){
+            
+//           $("h1").css("border", "2px solid blue");
+            
+           $("h1:first").css("border", "2px solid blue");
+           $("#green").css("border", "2px solid darkgreen");
+           $(".yellow").css("border", "2px solid yellow");
+            
+        });
+   
+    </script>
+</head>
+<body>
+    <h1>This is heading 1</h1>
+    <h1>This is another heading 1</h1>
+    <h1 id="green">This is heading 3</h1>
+    <h1 class="yellow">This is heading 4</h1>
+    
+</body>
+</html>

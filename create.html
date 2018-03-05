@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+//            alert($("#container").html())
+            
+//            $("#create").click(function(){
+//                
+//                $("#container p:first").html("<p>Replaced and create this text</p>");
+//                
+//            })
+            
+            $("#create_text").click(function(){
+                
+                $("#container p:last").text("<p>Replaced and create this text</p>");
+                
+            })
+            
+            $("#create_variable").click(function(){
+                
+                var newText = $('#container p:first');
+                
+                $("#container p:last").html(newText);
+                
+            });
+        
+        });
+        
+    </script>
+    
+</head>
+<body>
+   
+   <a href="#" id="create">Create</a>
+   
+   <a href="#" id="create_text">Create Text</a>
+   
+   <a href="#" id="create_variable">Create Text</a>
+   
+   <div id="container">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dignissimos eligendi aut, ipsam autem vitae molestias temporibus corporis nam laudantium, mollitia veritatis harum recusandae incidunt enim quae nisi voluptates adipisci.</p>
+       
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellat repellendus id facilis? Voluptatum fugit quis fugiat dolore, iure odio et recusandae, aliquam totam reprehenderit alias quasi eum. Eveniet, veritatis.</p>
+       
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex earum obcaecati reprehenderit voluptates dolore soluta quis asperiores, unde iusto eveniet ab optio nostrum autem totam tempora fugit, eligendi cum quidem.</p>
+   </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+            $("p").css("border", "1px solid red");
+            $("#third-para").css("border", "1px solid blue");
+             $("p.fourth-para").css("border", "5px solid yellow");
+        
+        });
+        
+    </script>
+    
+    <style>
+    
+        .para {
+            
+            border: 1px solid black;
+            
+            
+        }
+    
+    </style>
+    
+</head>
+<body>
+   
+   <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vitae fugit facilis, omnis, eius reiciendis pariatur tempora! Est similique quam numquam rem quae, repellendus laudantium odio, ipsum quidem eius, incidunt.</p>
+   
+   <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate, ullam aperiam autem, illo consequatur deserunt aliquid sapiente rem itaque, unde dolore voluptatem non! Debitis facere dolorem perspiciatis distinctio quibusdam.</p>
+   
+   <p id="third-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vitae fugit facilis, omnis, eius reiciendis pariatur tempora! Est similique quam numquam rem quae, repellendus laudantium odio, ipsum quidem eius, incidunt.</p>
+   
+   <p id="fourth-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptate, ullam aperiam autem, illo consequatur deserunt aliquid sapiente rem itaque, unde dolore voluptatem non! Debitis facere dolorem perspiciatis distinctio quibusdam.</p>
+    
+</body>
+</html>

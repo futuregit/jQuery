@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        
+        $("document").ready(function(){
+            
+//            $("#box p:first").next().css("border", "2px solid red");
+//             $("#box p:last").prev().css("border", "2px solid red");
+//            $("#box p:last").parents().css("border", "2px solid red");
+            $("#box p:last").parents().addClass('color').css("border", "2px solid red");
+                
+        });
+        
+    </script>
+    
+</head>
+<body>
+   
+   <div id="box">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sit, suscipit optio cum laborum ipsum, modi nihil voluptatibus. Fugiat earum, cum nemo quidem ducimus laborum ab ullam accusamus consequatur dolore.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ab debitis eius cum provident non dolorum blanditiis ratione soluta, quibusdam repellendus sequi fugiat, inventore assumenda repellat suscipit, iure consequatur vitae.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, libero est. Aliquid tempore doloremque quaerat nobis, expedita voluptatibus omnis quia ad similique non voluptatem iste nam ut, enim tenetur. Earum?</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nisi eius omnis amet id perferendis illo esse, quod error aliquam, sint officiis et iste ducimus incidunt quo atque quaerat molestiae!</p>
+   </div>
+    
+</body>
+</html>
